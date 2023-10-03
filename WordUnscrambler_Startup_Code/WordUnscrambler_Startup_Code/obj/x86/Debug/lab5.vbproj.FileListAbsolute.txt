@@ -1,2 +1,0 @@
-C:\Users\Felix\Downloads\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\lab5.vbproj.AssemblyReference.cache
-C:\Users\Felix\Downloads\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\lab5.vbproj.CoreCompileInputs.cache
