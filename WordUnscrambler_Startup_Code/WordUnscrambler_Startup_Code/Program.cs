@@ -63,7 +63,7 @@ namespace WordUnscrambler
         private static void DisplayMatchedUnscrambledWords(string[] scrambledWords)
         {
             //read the list of words from the system file. 
-            string[] wordList = _fileReader.Read("C:\\Users\\Felix\\Downloads\\WordUnscrambler_Startup_Code\\WordUnscrambler_Startup_Code\\wordlist.txt");
+            string[] wordList = _fileReader.Read("C:\\Users\\bluel\\source\\repos\\lab5WordUnscramblerupd\\WordUnscrambler_Startup_Code\\WordUnscrambler_Startup_Code\\unscrambledWords.txt");
 
             //call a word matcher method to get a list of structs of matched words.
             List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledWords, wordList);

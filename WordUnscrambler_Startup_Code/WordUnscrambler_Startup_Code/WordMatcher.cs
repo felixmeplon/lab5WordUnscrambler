@@ -43,7 +43,8 @@ namespace WordUnscrambler
                     }
                     else
                     {
-                        //Console.WriteLine("No scramble word matching.");
+                        Console.WriteLine("No scramble word matching.");
+                        break;
                     }
                 }
             }
