@@ -69,7 +69,7 @@ namespace WordUnscrambler
             List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledWords, wordList);
             foreach(MatchedWord matchedWord in matchedWords)
             {
-                Console.WriteLine(matchedWord.Word.ToString());
+                Console.WriteLine(matchedWord.Word.ToString() + " " + matchedWord.ScrambledWord.ToString());
             }
         }
 

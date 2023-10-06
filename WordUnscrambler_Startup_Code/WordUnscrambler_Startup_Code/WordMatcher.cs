@@ -20,12 +20,30 @@ namespace WordUnscrambler
            
             foreach(string ScrambleWord in scrambledWords)
             {
-                foreach(string word in wordList)
+                foreach (string word in wordList)
                 {
-                    if(ScrambleWord.Equals(word))
+                    
+
+                    char[] scrambleChar = ScrambleWord.ToCharArray();
+                    char[] wordChar = word.ToCharArray();
+
+                    Array.Sort(scrambleChar);
+                    Array.Sort(wordChar);
+
+
+                    string newScrambleChar = new string(scrambleChar);
+                    string newWordChar = new string(wordChar);
+
+
+
+                    if (newScrambleChar == newWordChar)
                     {
-                        matchedWords.Add(new MatchedWord { ScrambledWord = ScrambleWord,  Word = word});   
+                        matchedWords.Add(new MatchedWord { ScrambledWord = ScrambleWord, Word = word });
                         break;
+                    }
+                    else
+                    {
+                        //Console.WriteLine("No scramble word matching.");
                     }
                 }
             }
@@ -36,7 +54,7 @@ namespace WordUnscrambler
                 // Build a matched-word object here, so that you can return it.
                 MatchedWord matchedWord = new MatchedWord{ ScrambledWord = scrambledWord, Word = word };
             //return matchedWord;
-                return matchedWord;  
+                return matchedWord;    
             }
 
             return matchedWords;
