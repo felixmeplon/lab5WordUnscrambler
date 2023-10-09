@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WordUnscrambler
-{
+{   
     class WordMatcher
     {
         public List<MatchedWord> Match(string[] scrambledWords, string[] wordList)
