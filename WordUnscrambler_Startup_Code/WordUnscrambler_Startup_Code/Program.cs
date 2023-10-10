@@ -25,8 +25,9 @@ namespace WordUnscrambler
                             ExecuteScrambledWordsInFileScenario();
                             break;
                         case "M":
-                            Console.WriteLine("Enter scrambled words manually (separated by commas if multiple): ");
-                            ExecuteScrambledWordsManualEntryScenario();
+                         
+                               ExecuteScrambledWordsManualEntryScenario();
+
                             break;
                         default:
                             Console.WriteLine("The entered option was not recognized.");
@@ -48,25 +49,32 @@ namespace WordUnscrambler
         private static void ExecuteScrambledWordsInFileScenario()
         {
             string filename = Console.ReadLine();
-            string[] scrambledWords = _fileReader.Read(filename);
-            DisplayMatchedUnscrambledWords(scrambledWords);
+            string[] scrambledwords = _fileReader.Read(filename);
+            string[] scrambledsolutions = _fileReader.Read(filename);
+            DisplayMatchedUnscrambledWords(scrambledwords,scrambledsolutions);
         }
 
         private static void ExecuteScrambledWordsManualEntryScenario()
         {
-            string input = Console.ReadLine();
-            string[] scrambleWords = input.Split(',');
-            DisplayMatchedUnscrambledWords(scrambleWords);
+            Console.WriteLine("Enter scrambled words manually (separated by commas if multiple): ");
+            string scrambledimput = Console.ReadLine();
+            Console.WriteLine("Enter Unscrambled words manually (separated by commas)");
+            string scrambledoutput = Console.ReadLine();
+            string[] scrambledwords = scrambledimput.Split(',');
+            string[] scrambledsolutions = scrambledoutput.Split(',');
+            DisplayMatchedUnscrambledWords(scrambledwords, scrambledsolutions);
         }
 
-        private static void DisplayMatchedUnscrambledWords(string[] scrambledWords)
+        private static void DisplayMatchedUnscrambledWords  (string[] scrambledwords, string[] scrambledsolutions)
         {
-            string[] wordList = _fileReader.Read("C:\\Users\\bluel\\source\\repos\\lab5WordUnscramblerupd\\WordUnscrambler_Startup_Code\\WordUnscrambler_Startup_Code\\unscrambledWords.txt");
-            List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledWords, wordList);
-            foreach (MatchedWord matchedWord in matchedWords)
-            {
-                Console.WriteLine(matchedWord.Word + " " + matchedWord.ScrambledWord);
-            }
+            
+                List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledwords, scrambledsolutions);
+                foreach (MatchedWord matchedWord in matchedWords)
+                {
+                    Console.WriteLine(matchedWord.Word + " " + matchedWord.ScrambledWord);
+                }
+            
+
         }
     }
 }

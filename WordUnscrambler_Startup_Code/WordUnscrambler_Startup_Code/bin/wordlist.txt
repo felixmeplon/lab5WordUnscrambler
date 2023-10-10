@@ -1,4 +1,4 @@
-atanractic
+ataractic
 clambers
 spurries
 saturanto
@@ -8,3 +8,10 @@ wobel
 superego
 rabliz
 ranfce
+brazil
+france
+me
+you
+them
+dog
+cat
