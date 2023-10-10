@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace WordUnscrambler
 {
@@ -15,13 +20,13 @@ namespace WordUnscrambler
             {
                 try
                 {
-                    Console.WriteLine("Enter scrambled word(s) manually or as a file: F - file / M - manual");
+                    Console.WriteLine(sdfb.Properties.Constants.startingprompt);
                     string option = Console.ReadLine()?.ToUpper();
 
                     switch (option)
                     {
                         case "F":
-                            Console.WriteLine("Enter the full path including the file name: ");
+                            Console.WriteLine(sdfb.Properties.Constants.fileprompt);
                             ExecuteScrambledWordsInFileScenario();
                             break;
                         case "M":
@@ -30,7 +35,7 @@ namespace WordUnscrambler
 
                             break;
                         default:
-                            Console.WriteLine("The entered option was not recognized.");
+                            Console.WriteLine(sdfb.Properties.Constants.notreccognizedexeption);
                             continue;
                     }
 
@@ -62,6 +67,7 @@ namespace WordUnscrambler
             string scrambledoutput = Console.ReadLine();
             string[] scrambledwords = scrambledimput.Split(',');
             string[] scrambledsolutions = scrambledoutput.Split(',');
+           
             DisplayMatchedUnscrambledWords(scrambledwords, scrambledsolutions);
         }
 
@@ -69,11 +75,12 @@ namespace WordUnscrambler
         {
             
                 List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledwords, scrambledsolutions);
+
                 foreach (MatchedWord matchedWord in matchedWords)
                 {
-                    Console.WriteLine(matchedWord.Word + " " + matchedWord.ScrambledWord);
+                    Console.WriteLine(matchedWord.Word + " "+"is the unscrambled version of : "  + matchedWord.ScrambledWord);
                 }
-            
+                             
 
         }
     }
