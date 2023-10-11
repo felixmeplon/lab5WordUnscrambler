@@ -142,6 +142,15 @@ namespace sdfb.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to please select your language, E for english ou F pour francais.
+        /// </summary>
+        internal static string start {
+            get {
+                return ResourceManager.GetString("start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter scrambled word(s) manually or as a file: F - file / M - manual. Press &quot;L&quot; to change language to french.
         /// </summary>
         internal static string startingprompt {

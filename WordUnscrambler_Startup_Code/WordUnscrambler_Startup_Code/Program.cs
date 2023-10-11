@@ -16,72 +16,84 @@ namespace WordUnscrambler
 
         static void Main(string[] args)
         {
+
             while (true)
             {
-               
-                
                 try
                 {
-                    Console.WriteLine(sdfb.Properties.Constants.startingprompt);
-                    string option = Console.ReadLine()?.ToUpper();
+                    Console.WriteLine(sdfb.Properties.Constants.start);
+                string language = Console.ReadLine()?.ToUpper();
+                switch (language)
+                {
 
-                    switch (option)
-                    {
-                        case "F":
-                            Console.WriteLine(sdfb.Properties.Constants.fileprompt);
-                            ExecuteScrambledWordsInFileScenario();
-                            break;
-                        case "M":
-
-                            ExecuteScrambledWordsManualEntryScenario();
-
-                            break;
-
-                        case "L":
-                            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-CA");
+                    case "E":
+                            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-CA");
                             Console.WriteLine(sdfb.Properties.Constants.startingprompt);
-                                option = Console.ReadLine()?.ToUpper();
+                            string option = Console.ReadLine()?.ToUpper();
 
-                                switch (option)
-                                {
-                                    case "F":
-                                        Console.WriteLine(sdfb.Properties.Constants.fileprompt);
-                                        ExecuteScrambledWordsInFileScenario();
-                                        break;
-                                    case "M":
-
-                                        ExecuteScrambledWordsManualEntryScenario();
-
-                                        break;
-
-                                   
-                                    default:
-                                        Console.WriteLine(sdfb.Properties.Constants.notreccognizedexeption);
-                                        continue;
-                                }
-                            Console.Write(sdfb.Properties.Constants._continue);
-                            string continueInputfr = Console.ReadLine()?.ToUpper();
-                            if (continueInputfr.Equals("N"))
+                            switch (option)
                             {
-                                
+                                case "F":
+                                    Console.WriteLine(sdfb.Properties.Constants.fileprompt);
+                                    ExecuteScrambledWordsInFileScenario();
+                                    break;
+                                case "M":
+
+                                    ExecuteScrambledWordsManualEntryScenario();
+
+                                    break;
+
+
+
+
+                                default:
+                                    Console.WriteLine(sdfb.Properties.Constants.notreccognizedexeption);
+                                    continue;
+                            }
+
+                            Console.Write(sdfb.Properties.Constants._continue);
+                            string continueInput = Console.ReadLine()?.ToUpper();
+                            if (continueInput != "Y")
+                            {
                                 break;
                             }
-                            
-                            
-                                continue;
-                          
-                           
-                        default:
-                            Console.WriteLine(sdfb.Properties.Constants.notreccognizedexeption);
-                            continue;
-                    }
 
-                    Console.Write(sdfb.Properties.Constants._continue);
-                    string continueInput = Console.ReadLine()?.ToUpper();
-                    if (continueInput != "Y")
-                    {
+                            break;
+
+                    case "F":
+                   
+                        Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-CA");
+                        Console.WriteLine(sdfb.Properties.Constants.startingprompt);
+                         option = Console.ReadLine()?.ToUpper();
+
+                        switch (option)
+                        {
+                            case "F":
+                                Console.WriteLine(sdfb.Properties.Constants.fileprompt);
+                                ExecuteScrambledWordsInFileScenario();
+                                break;
+                            case "M":
+
+                                ExecuteScrambledWordsManualEntryScenario();
+
+                                break;
+
+
+                            default:
+                                Console.WriteLine(sdfb.Properties.Constants.notreccognizedexeption);
+                                continue;
+                        }
+                       
+                        Console.Write(sdfb.Properties.Constants._continue);
+                        continueInput = Console.ReadLine()?.ToUpper();
+                        if (continueInput != "O")
+                        {
+                            break;
+                        }
                         break;
-                    }
+                }
+             
+                    
                 }
                 catch (Exception ex)
                 {

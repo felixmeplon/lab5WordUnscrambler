@@ -144,6 +144,9 @@
   <data name="nswm" xml:space="preserve">
     <value>No scramble word matching</value>
   </data>
+  <data name="start" xml:space="preserve">
+    <value>please select your language, E for english ou F pour francais</value>
+  </data>
   <data name="startingprompt" xml:space="preserve">
     <value>Enter scrambled word(s) manually or as a file: F - file / M - manual. Press "L" to change language to french</value>
   </data>
