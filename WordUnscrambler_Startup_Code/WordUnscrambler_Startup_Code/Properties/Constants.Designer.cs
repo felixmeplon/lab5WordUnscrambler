@@ -61,11 +61,47 @@ namespace sdfb.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Would you like to continue? Y/N: .
+        /// </summary>
+        internal static string _continue {
+            get {
+                return ResourceManager.GetString("continue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error occurred: .
+        /// </summary>
+        internal static string error {
+            get {
+                return ResourceManager.GetString("error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter the full path including the file name:.
         /// </summary>
         internal static string fileprompt {
             get {
                 return ResourceManager.GetString("fileprompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter scrambled words manually (separated by commas if multiple):.
+        /// </summary>
+        internal static string manualentry {
+            get {
+                return ResourceManager.GetString("manualentry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter Unscrambled words manually (separated by commas).
+        /// </summary>
+        internal static string manualentrysol {
+            get {
+                return ResourceManager.GetString("manualentrysol", resourceCulture);
             }
         }
         
@@ -79,11 +115,29 @@ namespace sdfb.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No scramble word matching.
+        /// </summary>
+        internal static string nswm {
+            get {
+                return ResourceManager.GetString("nswm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter scrambled word(s) manually or as a file: F - file / M - manual.
         /// </summary>
         internal static string startingprompt {
             get {
                 return ResourceManager.GetString("startingprompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to is the unscrambled version of : .
+        /// </summary>
+        internal static string unscrambledversionof {
+            get {
+                return ResourceManager.GetString("unscrambledversionof", resourceCulture);
             }
         }
     }

@@ -59,6 +59,7 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Properties\Constants.fr-CA.resx" />
     <EmbeddedResource Include="Properties\Constants.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Constants.Designer.cs</LastGenOutput>

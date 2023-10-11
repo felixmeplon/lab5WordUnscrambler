@@ -39,14 +39,14 @@ namespace WordUnscrambler
                             continue;
                     }
 
-                    Console.Write("Would you like to continue? Y/N: ");
+                    Console.Write(sdfb.Properties.Constants._continue);
                     string continueInput = Console.ReadLine()?.ToUpper();
                     if (continueInput != "Y")
                         break;
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("An error occurred: " + ex.Message);
+                    Console.WriteLine(sdfb.Properties.Constants.error+ ex.Message);
                 }
             }
         }
@@ -61,9 +61,9 @@ namespace WordUnscrambler
 
         private static void ExecuteScrambledWordsManualEntryScenario()
         {
-            Console.WriteLine("Enter scrambled words manually (separated by commas if multiple): ");
+            Console.WriteLine(sdfb.Properties.Constants.manualentry);
             string scrambledimput = Console.ReadLine();
-            Console.WriteLine("Enter Unscrambled words manually (separated by commas)");
+            Console.WriteLine(sdfb.Properties.Constants.manualentrysol);
             string scrambledoutput = Console.ReadLine();
             string[] scrambledwords = scrambledimput.Split(',');
             string[] scrambledsolutions = scrambledoutput.Split(',');
@@ -78,7 +78,7 @@ namespace WordUnscrambler
 
                 foreach (MatchedWord matchedWord in matchedWords)
                 {
-                    Console.WriteLine(matchedWord.Word + " "+"is the unscrambled version of : "  + matchedWord.ScrambledWord);
+                    Console.WriteLine(matchedWord.Word + " "+ sdfb.Properties.Constants.unscrambledversionof + matchedWord.ScrambledWord);
                 }
                              
 

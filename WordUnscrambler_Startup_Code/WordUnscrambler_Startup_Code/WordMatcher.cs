@@ -43,7 +43,7 @@ namespace WordUnscrambler
                     }
                     else
                     {
-                        Console.WriteLine("No scramble word matching.");
+                        Console.WriteLine(sdfb.Properties.Constants.nswm);
                         break;
                     }
                 }
