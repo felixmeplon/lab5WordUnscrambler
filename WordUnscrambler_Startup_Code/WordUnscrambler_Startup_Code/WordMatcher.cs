@@ -9,7 +9,7 @@ namespace WordUnscrambler
 {   
     class WordMatcher
     {
-        public List<MatchedWord> Match(string[] scrambledWords, string[] wordList)
+        public List<MatchedWord> Match(string[] scrambledwords, string[] wordList)
         {
             List<MatchedWord> matchedWords = new List<MatchedWord>();
             //take imput
@@ -18,7 +18,7 @@ namespace WordUnscrambler
             // Work with "scrambledWords" and "matchedWords".
             
            
-            foreach(string scrambledWord in scrambledWords)
+            foreach(string scrambledWord in scrambledwords)
             {
                 foreach (string word in wordList)
                 {

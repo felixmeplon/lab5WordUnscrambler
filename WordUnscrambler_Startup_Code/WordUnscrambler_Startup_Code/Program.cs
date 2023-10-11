@@ -25,6 +25,7 @@ namespace WordUnscrambler
                 string language = Console.ReadLine()?.ToUpper();
                 switch (language)
                 {
+                       
 
                     case "E":
                             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-CA");
@@ -49,6 +50,7 @@ namespace WordUnscrambler
                                 default:
                                     Console.WriteLine(sdfb.Properties.Constants.notreccognizedexeption);
                                     continue;
+                                    
                             }
 
                             Console.Write(sdfb.Properties.Constants._continue);
@@ -90,8 +92,12 @@ namespace WordUnscrambler
                         {
                             break;
                         }
-                        break;
-                }
+
+                            break;
+
+                        default:
+                            break;
+                    }
              
                     
                 }
@@ -126,7 +132,8 @@ namespace WordUnscrambler
 
         private static void DisplayMatchedUnscrambledWords  (string[] scrambledwords)
         {
-            string[] wordlist = _fileReader.Read("wordlist.txt");
+            string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string[] wordlist = _fileReader.Read(Path.Combine(currentDirectory, "wordlist.txt"));
 
             
                 List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledwords,wordlist);
