@@ -18,6 +18,8 @@ namespace WordUnscrambler
         {
             while (true)
             {
+               
+                
                 try
                 {
                     Console.WriteLine(sdfb.Properties.Constants.startingprompt);
@@ -59,13 +61,16 @@ namespace WordUnscrambler
                                 }
                             Console.Write(sdfb.Properties.Constants._continue);
                             string continueInputfr = Console.ReadLine()?.ToUpper();
-                            if (continueInputfr == "N")
+                            if (continueInputfr.Equals("N"))
                             {
                                 
                                 break;
                             }
-
-                            break;
+                            
+                            
+                                continue;
+                          
+                           
                         default:
                             Console.WriteLine(sdfb.Properties.Constants.notreccognizedexeption);
                             continue;
