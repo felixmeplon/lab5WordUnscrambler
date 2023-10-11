@@ -106,26 +106,30 @@ namespace WordUnscrambler
         {
             string filename = Console.ReadLine();
             string[] scrambledwords = _fileReader.Read(filename);
-            string[] scrambledsolutions = _fileReader.Read(filename);
-            DisplayMatchedUnscrambledWords(scrambledwords,scrambledsolutions);
+           
+            DisplayMatchedUnscrambledWords(scrambledwords);
         }
 
         private static void ExecuteScrambledWordsManualEntryScenario()
         {
+
             Console.WriteLine(sdfb.Properties.Constants.manualentry);
+
             string scrambledimput = Console.ReadLine();
-            Console.WriteLine(sdfb.Properties.Constants.manualentrysol);
-            string scrambledoutput = Console.ReadLine();
-            string[] scrambledwords = scrambledimput.Split(',');
-            string[] scrambledsolutions = scrambledoutput.Split(',');
-           
-            DisplayMatchedUnscrambledWords(scrambledwords, scrambledsolutions);
+            string[] scrambledwords=scrambledimput.Split(',');
+
+            
+
+
+            DisplayMatchedUnscrambledWords(scrambledwords);
         }
 
-        private static void DisplayMatchedUnscrambledWords  (string[] scrambledwords, string[] scrambledsolutions)
+        private static void DisplayMatchedUnscrambledWords  (string[] scrambledwords)
         {
+            string[] wordlist = _fileReader.Read("wordlist.txt");
+
             
-                List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledwords, scrambledsolutions);
+                List<MatchedWord> matchedWords = _wordMatcher.Match(scrambledwords,wordlist);
 
                 foreach (MatchedWord matchedWord in matchedWords)
                 {

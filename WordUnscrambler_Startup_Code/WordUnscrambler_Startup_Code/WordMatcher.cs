@@ -18,13 +18,13 @@ namespace WordUnscrambler
             // Work with "scrambledWords" and "matchedWords".
             
            
-            foreach(string ScrambleWord in scrambledWords)
+            foreach(string scrambledWord in scrambledWords)
             {
                 foreach (string word in wordList)
                 {
                     
 
-                    char[] scrambleChar = ScrambleWord.ToCharArray();
+                    char[] scrambleChar = scrambledWord.ToCharArray();
                     char[] wordChar = word.ToCharArray();
 
                     Array.Sort(scrambleChar);
@@ -36,9 +36,9 @@ namespace WordUnscrambler
 
 
 
-                    if (newScrambleChar == newWordChar)
+                    if (newScrambleChar.Equals(newWordChar))
                     {
-                        matchedWords.Add(new MatchedWord { ScrambledWord = ScrambleWord, Word = word });
+                        matchedWords.Add(BuildMatchedWord(scrambledWord, word));
                         break;
                     }
                     else
