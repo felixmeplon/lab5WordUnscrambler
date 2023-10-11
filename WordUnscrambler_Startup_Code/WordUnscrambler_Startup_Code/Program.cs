@@ -52,16 +52,18 @@ namespace WordUnscrambler
 
                                         break;
 
-                                    case "L":
+                                   
                                     default:
                                         Console.WriteLine(sdfb.Properties.Constants.notreccognizedexeption);
                                         continue;
                                 }
                             Console.Write(sdfb.Properties.Constants._continue);
                             string continueInputfr = Console.ReadLine()?.ToUpper();
-                            if (continueInputfr != "o" || continueInputfr != "L" || continueInputfr != "y")
+                            if (continueInputfr == "N")
+                            {
+                                
                                 break;
-
+                            }
 
                             break;
                         default:
@@ -71,8 +73,10 @@ namespace WordUnscrambler
 
                     Console.Write(sdfb.Properties.Constants._continue);
                     string continueInput = Console.ReadLine()?.ToUpper();
-                    if (continueInput != "o" || continueInput != "L" || continueInput != "y") 
+                    if (continueInput != "Y")
+                    {
                         break;
+                    }
                 }
                 catch (Exception ex)
                 {
