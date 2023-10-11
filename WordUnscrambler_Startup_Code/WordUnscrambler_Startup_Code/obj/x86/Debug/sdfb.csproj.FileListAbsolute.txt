@@ -14,3 +14,6 @@ C:\Users\bluel\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\
 C:\Users\bluel\source\repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.Properties.wordlist.resources
 C:\Users\bluel\source\repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.csproj.GenerateResource.cache
 C:\Users\bluel\source\repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.Properties.Constants.resources
+C:\Users\bluel\source\repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\bin\Debug\fr-CA\ConsoleApplication.resources.dll
+C:\Users\bluel\source\repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.Properties.Constants.fr-CA.resources
+C:\Users\bluel\source\repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\fr-CA\ConsoleApplication.resources.dll

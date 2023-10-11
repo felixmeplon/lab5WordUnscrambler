@@ -21,12 +21,12 @@ namespace WordUnscrambler
                 catch (IOException e)
                 {
                     // Handle any IOException that might occur while reading the file
-                    Console.WriteLine("An error occurred while reading the file: " + e.Message);
+                    Console.WriteLine(sdfb.Properties.Constants.errorread + e.Message);
                 }
             }
             else
             {
-                Console.WriteLine("The file does not exist: " + filename);
+                Console.WriteLine(sdfb.Properties.Constants.fdne + filename);
             }
 
             // Return an empty array if there was an error or the file does not exist

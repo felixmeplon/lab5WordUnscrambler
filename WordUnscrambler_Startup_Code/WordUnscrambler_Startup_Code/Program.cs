@@ -30,8 +30,38 @@ namespace WordUnscrambler
                             ExecuteScrambledWordsInFileScenario();
                             break;
                         case "M":
-                         
-                               ExecuteScrambledWordsManualEntryScenario();
+
+                            ExecuteScrambledWordsManualEntryScenario();
+
+                            break;
+
+                        case "L":
+                            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-CA");
+                            Console.WriteLine(sdfb.Properties.Constants.startingprompt);
+                                option = Console.ReadLine()?.ToUpper();
+
+                                switch (option)
+                                {
+                                    case "F":
+                                        Console.WriteLine(sdfb.Properties.Constants.fileprompt);
+                                        ExecuteScrambledWordsInFileScenario();
+                                        break;
+                                    case "M":
+
+                                        ExecuteScrambledWordsManualEntryScenario();
+
+                                        break;
+
+                                    case "L":
+                                    default:
+                                        Console.WriteLine(sdfb.Properties.Constants.notreccognizedexeption);
+                                        continue;
+                                }
+                            Console.Write(sdfb.Properties.Constants._continue);
+                            string continueInputfr = Console.ReadLine()?.ToUpper();
+                            if (continueInputfr != "o" || continueInputfr != "L" || continueInputfr != "y")
+                                break;
+
 
                             break;
                         default:
@@ -41,7 +71,7 @@ namespace WordUnscrambler
 
                     Console.Write(sdfb.Properties.Constants._continue);
                     string continueInput = Console.ReadLine()?.ToUpper();
-                    if (continueInput != "Y")
+                    if (continueInput != "o" || continueInput != "L" || continueInput != "y") 
                         break;
                 }
                 catch (Exception ex)

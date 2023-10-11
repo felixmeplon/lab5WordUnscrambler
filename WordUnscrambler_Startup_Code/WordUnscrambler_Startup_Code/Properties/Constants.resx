@@ -123,6 +123,12 @@
   <data name="error" xml:space="preserve">
     <value>An error occurred: </value>
   </data>
+  <data name="errorread" xml:space="preserve">
+    <value>An error occurred while reading the file: </value>
+  </data>
+  <data name="fdne" xml:space="preserve">
+    <value>The file does not exist: </value>
+  </data>
   <data name="fileprompt" xml:space="preserve">
     <value>Enter the full path including the file name:</value>
   </data>
@@ -139,7 +145,7 @@
     <value>No scramble word matching</value>
   </data>
   <data name="startingprompt" xml:space="preserve">
-    <value>Enter scrambled word(s) manually or as a file: F - file / M - manual</value>
+    <value>Enter scrambled word(s) manually or as a file: F - file / M - manual. Press "L" to change language to french</value>
   </data>
   <data name="unscrambledversionof" xml:space="preserve">
     <value>is the unscrambled version of : </value>

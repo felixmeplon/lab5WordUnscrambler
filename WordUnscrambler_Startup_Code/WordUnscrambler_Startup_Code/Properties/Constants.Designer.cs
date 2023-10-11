@@ -79,6 +79,24 @@ namespace sdfb.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An error occurred while reading the file: .
+        /// </summary>
+        internal static string errorread {
+            get {
+                return ResourceManager.GetString("errorread", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The file does not exist: .
+        /// </summary>
+        internal static string fdne {
+            get {
+                return ResourceManager.GetString("fdne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter the full path including the file name:.
         /// </summary>
         internal static string fileprompt {
@@ -124,7 +142,7 @@ namespace sdfb.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter scrambled word(s) manually or as a file: F - file / M - manual.
+        ///   Looks up a localized string similar to Enter scrambled word(s) manually or as a file: F - file / M - manual. Press &quot;L&quot; to change language to french.
         /// </summary>
         internal static string startingprompt {
             get {
