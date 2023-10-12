@@ -30,3 +30,16 @@ C:\Users\Felix\Source\Repos\lab5WordUnscrambler\WordUnscrambler_Startup_Code\Wor
 C:\Users\Felix\Source\Repos\lab5WordUnscrambler\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\fr-CA\ConsoleApplication.resources.dll
 C:\Users\Felix\Source\Repos\lab5WordUnscrambler\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\ConsoleApplication.exe
 C:\Users\Felix\Source\Repos\lab5WordUnscrambler\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\bin\Debug\ConsoleApplication.exe.config
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\bin\Debug\ConsoleApplication.exe
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\bin\Debug\ConsoleApplication.pdb
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\bin\Debug\fr-CA\ConsoleApplication.resources.dll
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.csproj.AssemblyReference.cache
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.Properties.Constants.resources
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.Properties.wordlist.resources
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.Properties.Constants.fr-CA.resources
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.csproj.GenerateResource.cache
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\sdfb.csproj.CoreCompileInputs.cache
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\fr-CA\ConsoleApplication.resources.dll
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\Felix\Source\Repos\lab5WordUnscramblerupd\WordUnscrambler_Startup_Code\WordUnscrambler_Startup_Code\obj\x86\Debug\ConsoleApplication.pdb

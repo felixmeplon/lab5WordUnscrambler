@@ -36,16 +36,12 @@ namespace WordUnscrambler
 
 
 
-                    if (newScrambleChar.Equals(newWordChar))
+                    if (newScrambleChar == newWordChar)
                     {
-                        matchedWords.Add(BuildMatchedWord(scrambledWord, word));
+                        matchedWords.Add(new MatchedWord { ScrambledWord = scrambledWord, Word = word});
                         break;
                     }
-                    else
-                    {
-                        Console.WriteLine(sdfb.Properties.Constants.nswm);
-                        break;
-                    }
+                    
                 }
             }
             
